@@ -1,0 +1,25 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  text-align: left;
+  display: flex;
+  padding: 0px 80px;
+  position: relative;
+  font-weight: 300;
+}
+
+.nav-item {
+  padding: 8px;
+}
+
+.row {
+  display: flex;
+}
+
+.image {
+    padding: 8px;
+    margin: 0 auto;
+}
+
