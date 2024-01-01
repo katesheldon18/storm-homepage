@@ -5,16 +5,16 @@
     <title>STORM: Women's Clothing</title>
     <link href="storm.css" rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
   </head>
   <body>
     <nav class="nav">
+      <img
+        src="/images/storm-logo.webp"
+        alt="storm-logo"
+        width="110px"
+        height="15px"
+      />
       <div class="nav-item">New</div>
       <div class="nav-item">Clothing</div>
       <div class="nav-item">Accessories</div>
@@ -25,26 +25,29 @@
     </nav>
 
     <div class="row">
-      <source
-        media="(max-width:50px)"
-        srcset="/images/sequin-top-green-front-73549knt.webp"
-      />
-      <img
-        class="image"
-        src="/images/sequin-top-green-front-73549knt.webp"
-        alt="sequin-top"
-        style="width: 50%"
-      />
-      <source
-        media="(max-width:50px)"
-        srcset="/images/sequin-top-green-front-73549knt.webp"
-      />
-      <img
-        class="image"
-        src="/images/sequin-top-green-front-73549knt.webp"
-        alt="sequin-top"
-        style="width: 50%"
-      />
+      <div class="image-container">
+        <img
+          class="image"
+          src="/images/sequin-top-green-front-73549knt.webp"
+          alt="sequin-top"
+        />
+        <div class="image-contents">
+          <div class="image-text">SEE YOU ON THE DANCEFLOOR!</div>
+          <button class="image-button">SHOP NOW</button>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img
+          class="image"
+          src="/images/sequin-top-green-front-73549knt.webp"
+          alt="sequin-top"
+        />
+        <div class="image-contents">
+          <div class="image-text">SEE YOU ON THE DANCEFLOOR!</div>
+          <button class="image-button">SHOP NOW</button>
+        </div>
+      </div>
     </div>
 
     <div class="slider">

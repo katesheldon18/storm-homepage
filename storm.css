@@ -1,13 +1,25 @@
-* {
-  font-family: "Open Sans", sans-serif;
+@font-face {
+  font-family: "gotham-book";
+  src: url("fonts/gotham-book-webfont.woff");
+}
+
+@font-face {
+  font-family: "gotham-medium";
+  src: url("fonts/gotham-medium-webfont.woff");
+}
+
+@font-face {
+  font-family: "gotham-bold";
+  src: url("fonts/gotham_bold-webfont.woff");
 }
 
 nav {
   text-align: left;
   display: flex;
-  padding: 0px 80px;
   position: relative;
-  font-weight: 300;
+  font-family: "gotham-medium";
+  font-size: 13px;
+  align-items: center;
 }
 
 .nav-item {
@@ -18,8 +30,47 @@ nav {
   display: flex;
 }
 
+.image-container {
+  position: relative;
+
+  width: 50%;
+}
 .image {
-    padding: 8px;
-    margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
+.image-contents {
+  position: absolute;
+  width: 282px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "gotham-book";
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 6px;
+}
+
+.image-text {
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.image-button {
+  /* position: absolute;
+  left: 50%;
+  top: 60%;
+  /* transform: translate(-50%, 0); */
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 4px 40px;
+  font-family: "gotham-medium";
+  font-size: 16px;
+  letter-spacing: 4px;
+  margin: 0 auto;
+  display: block;
+}
