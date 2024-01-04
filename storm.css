@@ -30,6 +30,19 @@ nav {
   padding: 8px;
 }
 
+#nav-right {
+  margin-left: auto;
+  display: flex;
+  font-family: "gotham-book";
+  font-size: 13px;
+}
+
+#searchbar {
+  font-family: "gotham-book";
+  border: none;
+  border-bottom: 0.5px solid black;
+}
+
 .row {
   display: flex;
   gap: 16px;
