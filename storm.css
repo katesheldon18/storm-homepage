@@ -13,11 +13,17 @@
   src: url("fonts/gotham_bold-webfont.woff");
 }
 
+@font-face {
+  font-family: "ionicons";
+  src: url("/fonts/ionicons.ttf");
+}
+
 body {
   margin: 0;
 }
 
 nav {
+  padding: 30px;
   text-align: left;
   display: flex;
   position: relative;
@@ -26,21 +32,57 @@ nav {
   align-items: center;
 }
 
+ion-icon {
+  font-size: 16px;
+}
+
 .nav-item {
   padding: 8px;
 }
 
-#nav-right {
+.nav-right {
   margin-left: auto;
+  margin-right: 16px;
   display: flex;
   font-family: "gotham-book";
   font-size: 13px;
+  align-items: center;
 }
 
-#searchbar {
-  font-family: "gotham-book";
+.search-wrap {
   border: none;
   border-bottom: 0.5px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  font-family: "gotham-book";
+  font-size: 14px;
+  border: none;
+}
+
+.search-bar:focus-visible {
+  outline: none;
+}
+
+.login {
+  margin-left: 24px;
+  text-decoration: underline;
+}
+
+.bag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: underline;
+}
+
+.divider {
+  background-color: black;
+  width: 0.5px;
+  height: 14px;
+  margin: 0 10px;
 }
 
 .row {
@@ -112,3 +154,5 @@ nav {
   display: none;
   transition: display 2s;
 }
+
+

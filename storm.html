@@ -22,12 +22,18 @@
       <div class="nav-item">Black Wolf Gin</div>
       <div class="nav-item">Sale</div>
       <div class="nav-item">Styling Boutique</div>
-      <div id="nav-right">
-        <!-- <img src="images/magnifying-glass.png"/> -->
-        <input id="searchbar" placeholder="⌕ Search..."></input>
-        <div>Login</div>
-        <div>| Bag 🗑️ |</div>
-        <div>♡</div>
+      <div class="nav-right">
+        <div class="search-wrap">
+        <ion-icon name="search-outline"></ion-icon>
+        <input class="search-bar" placeholder="Search..."></input>
+      </div>
+        <div class="login">Login</div>
+        <div class="divider"></div>
+        <div class="bag">Bag 
+          <ion-icon name="bag-outline"></ion-icon>
+        </div>
+        <div class="divider"></div>
+        <ion-icon name="heart-outline"></ion-icon>
     </div>
     </nav>
 
@@ -70,5 +76,7 @@
     </div>
 
     <script src="storm.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
