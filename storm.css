@@ -23,7 +23,7 @@ body {
 }
 
 nav {
-  padding: 30px;
+  padding: 30px 30px 14px;
   text-align: left;
   display: flex;
   position: relative;
@@ -34,6 +34,10 @@ nav {
 
 ion-icon {
   font-size: 16px;
+}
+
+.storm-logo {
+  padding-right: 16px;
 }
 
 .nav-item {
@@ -140,6 +144,8 @@ ion-icon {
   position: absolute;
   top: 50%;
   left: 32px;
+  color: white;
+  font-size: 48px;
   transform: translate(0, -50%);
 }
 
@@ -147,6 +153,8 @@ ion-icon {
   position: absolute;
   top: 50%;
   right: 32px;
+  color: white;
+  font-size: 48px;
   transform: translate(0, -50%);
 }
 
@@ -154,5 +162,3 @@ ion-icon {
   display: none;
   transition: display 2s;
 }
-
-
