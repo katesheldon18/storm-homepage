@@ -138,10 +138,19 @@ ion-icon {
 
 #slider {
   position: relative;
+  display: flex;
+  overflow-x: scroll;
+  flex-shrink: 0;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+#slider::-webkit-scrollbar {
+  display: none;
 }
 
 #left-arrow {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 32px;
   color: white;
@@ -150,7 +159,7 @@ ion-icon {
 }
 
 #right-arrow {
-  position: absolute;
+  position: fixed;
   top: 50%;
   right: 32px;
   color: white;
@@ -158,7 +167,10 @@ ion-icon {
   transform: translate(0, -50%);
 }
 
-.image-hide {
+.slider-image {
+  flex-shrink: 0;
+}
+
+.hide-arrow {
   display: none;
-  transition: display 2s;
 }
