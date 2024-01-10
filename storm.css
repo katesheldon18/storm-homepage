@@ -140,6 +140,7 @@ ion-icon {
   letter-spacing: 4px;
   margin: 0 auto;
   display: block;
+  cursor: pointer;
 }
 
 .slider-container {
@@ -153,6 +154,7 @@ ion-icon {
   flex-shrink: 0;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  scroll-behavior: smooth;
 }
 
 #slider::-webkit-scrollbar {

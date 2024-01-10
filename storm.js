@@ -11,6 +11,7 @@ function slide(direction) {
   const leftArrow = document.getElementById("left-arrow");
   const rightArrow = document.getElementById("right-arrow");
   const slider = document.getElementById("slider");
+
   const children = Array.from(slider.children).filter(
     (child) => child.tagName === "IMG"
   );
@@ -34,10 +35,7 @@ function slide(direction) {
 
   children.forEach((child, index) => {
     if (index === currentIndex) {
-      child.scrollIntoView({
-        block: "start",
-        behavior: "smooth",
-      });
+      child.scrollIntoView();
     }
   });
 }
